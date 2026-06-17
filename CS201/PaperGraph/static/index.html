@@ -315,10 +315,11 @@ function render() {
   ctx.scale(zoom,zoom);
 
   // Domain background circles
-  ctx.globalAlpha=0.12;
   for (const [d,c] of Object.entries(centers)) {
+    ctx.globalAlpha=0.18;
     ctx.beginPath(); ctx.arc(c.x,c.y,200,0,Math.PI*2);
     ctx.fillStyle=DOMAIN_BG[d]; ctx.fill();
+    ctx.globalAlpha=0.6;
     ctx.font='13px -apple-system, "Segoe UI", sans-serif';
     ctx.fillStyle=DOMAIN_COLORS[d];
     ctx.textAlign='center'; ctx.textBaseline='middle';
