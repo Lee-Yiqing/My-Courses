@@ -146,7 +146,6 @@ PaperGraph/
 │   └── test_algorithms.py   # 5个算法的完整性测试
 ├── .github/workflows/       # GitHub Actions自动部署
 ├── README.md                # 本文件
-├── LICENSE                  # MIT
 └── requirements.txt         # numpy, pymupdf, requests
 ```
 
@@ -220,9 +219,3 @@ PYTHONPATH=. python3 tests/test_algorithms.py
 核心算法的逻辑架构、异质图类型约束扩展、动画叙事三层设计（意义/摘要/知识点）、综述的悖论提炼均为自主思考。
 
 使用的AI工具：Claude Code (Anthropic)
-
----
-
-## License
-
-MIT License
